@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int i,j,k;
+clrscr();
+printf("enter the valu of three number");
+scanf("%d%d%d",&i,&j,&k);
+if(i>=j && i>=k)
+printf("%d is the largest number",i);
+else
+if(j>=i && j>=k)
+printf("%d is the largest number",j);
+else
+printf("%d is the largest number",k);
+getch();
+}
