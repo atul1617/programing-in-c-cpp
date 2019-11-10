@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+float gross_salary,basic,da,ta;
+clrscr();
+printf("enter basic_salary:");
+scanf("%f",&basic);
+da=basic*40/100;
+ta=basic*20/100;
+gross_salary=basic+da+ta;
+printf("da=%f\nta=%f\ngross_salary=%f",da,ta,gross_salary);
+getch();
+}
