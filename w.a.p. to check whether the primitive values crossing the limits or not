@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	char gender = 'F';
+	bool isemployed = true;
+	unsigned short numofsons = 2;
+	short yearofappt = 2009;
+	unsigned int yearlypackge = 1500000;
+	double height = 78.88;
+	float gpa = 4.69f;
+	long totaldrawan = 12386855L;
+      long long balance = 234567890LL;
+	  
+	  cout<<"the gender is :"<<gender<<endl;
+	  cout<<"is she married? :"<<isemployed<<endl;
+	  cout<<"number of sons she has :"<<numofsons<<endl;
+	  cout<<"year of her appoiment :"<<yearofappt<<endl;
+	  cout<<"salary for a year :"<<yearlypackge<<endl;
+	  cout<<"height is :"<<height<<endl;
+	  cout<<"GPA is :"<<gpa<<endl;
+	  cout<<"salary drawn upto :"<<totaldrawan<<endl;
+	  cout<<"balance till :"<<balance<<endl;
+	  return 0;
+	  	 
+}
