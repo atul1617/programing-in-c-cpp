@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int x,y,i,gcd;
+	cout<<"enter two integer values:"<<endl;
+	cin>>x>>y;
+	for(i=1;i<=x&&i<=y;i++)
+	{if(x%i==0&&y%i==0)
+	gcd=i;
+	}
+	cout<<"\n gcdof"<<x<<"and"<<y<<"is"<<gcd<<endl;
+	return 0;
+
+}
