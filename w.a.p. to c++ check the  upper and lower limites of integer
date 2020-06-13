@@ -1,0 +1,17 @@
+#include<iostream>
+#include<climits>//int limits in header file
+using namespace std;
+int main()
+{
+	cout<<"\n\n check the upper and lower limit of integer :\n";
+	cout<<"..................................................:\n";
+	cout<<"the maximum limit of int data type :"<<INT_MAX<<endl;
+	cout<<"the minimum limit of int data type :"<<INT_MIN<<endl;
+	cout<<"the maximum limit of char data type :"<<CHAR_MAX<<endl;
+	cout<<"the minimum limit of char data type :"<<CHAR_MIN<<endl;
+	cout<<"the Bits contain in char data type :"<<CHAR_BIT<<endl;
+	cout<<"the maximum limit of short data type :"<<SHRT_MAX<<endl;
+	cout<<"the minimum limit of short data type :"<<SHRT_MIN<<endl;
+	cout<<endl;
+	return 0;
+}
