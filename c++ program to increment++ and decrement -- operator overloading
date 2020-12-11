@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int a=21;
+int c;
+c=a++;
+cout<<"line 1-valu of a++ is:"<<c<<endl;
+cout<<"line 2- valu os a is:"<<a<<endl;
+c=++a;
+cout<<"line 3- valu of ++a:"<<c<<endl;
+return 0;
+
+}
