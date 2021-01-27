@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int n,i;
+cout<<"enter the any number n:";
+cin>>n;
+if(n%2)
+for(i=1;i<=n;i++) 
+{
+cout<<"n is a prime number";
+}
+else	
+{
+	cout<<"n is not a prime number";
+}
+return 0;
+}
