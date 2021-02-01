@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+class factorial
+{
+	public:
+	int fact,n;
+	void calculation();
+	void display();
+};
+void factorial::calculation()
+{
+	cout<<n<<" ";
+    {
+    while(n>=1)
+    {
+	fact=fact*n;
+    n++;
+    }
+	}
+}
+void factorial::display() 
+{
+  cout << "Factorial of " << n << " is " << fact << endl;
+}
+int main() {
+  factorial fact;
+  fact.calculation();
+  fact.display();
+  return 0;
+}
