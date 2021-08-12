@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int i,num,range;
+	cout<<"enter the any number \n";
+	cin>>num;
+	cout<<"enter the range \n";
+	cin>>range;
+	for(i=1; i<=range; ++i)
+	{
+		cout<< num <<" * "<<i<< " = "<< num*i <<endl;
+	}
+	return 0;
+}
