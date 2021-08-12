@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+class volume
+{
+	public:
+		int sum(int a,int b){
+      	cout<<"using function with 2 arguments"<<endl;
+	      return a+b;
+          }
+         int sum(int a, int b ,  int c){
+        	cout<<"using function with 3 arguments"<<endl;
+        	return a+b+c;
+           }
+		double vol(double r,double h){
+			cout<<"using function with 2 arguments"<<endl;
+			return (3.14*r*r*h);
+		}
+		
+		int vol(int a){
+			cout<<"using function with 1 arguments"<<endl;
+			return (a*a*a);
+		}
+		
+		int vol(int l,int w,int h){
+			cout<<"using function with 3 arguments"<<endl;
+	    return (l*w*h);
+		}
+};
+int main()
+{
+	volume obj;
+	cout<<"the sum of 3 and 6 is"<<obj.sum(3,6)<<endl;
+	cout<<"the sum of 3, 7 and 6 is"<<obj.sum(3,7,6)<<endl;
+	cout<<"the volume of a cyilender is: "<<obj.vol(2.5, 5)<<endl;
+	cout<<"the volume of a cube is: "<<obj.vol(3)<<endl;
+	cout<<"the volume of a rectangular box is: "<<obj.vol(4, 5, 6)<<endl;
+	return 0;
+}
