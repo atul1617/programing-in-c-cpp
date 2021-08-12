@@ -1,0 +1,58 @@
+#include<iostream>
+using namespace std;
+class basicInfo
+{
+	public:
+		char name[20];
+		int rollno;
+		char gender[20];
+		void getbasicInfo()
+		{
+		cout<<"enter name: "<<endl;
+		cin>>name;
+		cout<<"enter rollnumber: "<<endl;
+		cin>>rollno;
+		cout<<"enter gender: "<<endl;
+		cin>>gender;
+		}
+};
+class collegeInfo : public basicInfo
+{
+	public:
+		char Deptname[30];
+		int deptID;
+		char branch[20];
+		void getcollegeinfo()
+		{
+			cout<<"enter the college name: "<<endl;
+			cin>>Deptname;
+			cout<<"enter the department code: "<<endl;
+			cin>>deptID;
+			cout<<"enter the branch: "<<endl;
+			cin>>branch;
+		}	
+};
+class student : public collegeInfo
+{
+	public:
+			void printstudentInfo()
+		{
+			cout<<"student Information is:  "<<endl;
+			cout<<"basic Information....."<<endl;
+			cout<<"name: "<<name<<endl;
+			cout<<"student roll number: "<<rollno<<endl;
+			cout<<"gender: "<<gender<<endl;
+			
+			cout<<"depatment Information....."<<endl;
+			cout<<"college name: "<<Deptname<<endl;
+			cout<<"department code: "<<deptID<<endl;
+		    cout<<"branch:"<<branch<<endl;	
+		}	
+};
+int main(){
+	student s;
+	s.getbasicInfo();
+	s.getcollegeinfo();
+	s.printstudentInfo();
+	return 0;
+}
