@@ -1,0 +1,65 @@
+#include<iostream>
+using namespace std;
+class basicInfo
+{
+	public:
+		char name[30];
+		int empId;
+		char gender[6];
+		void getbasicInfo()
+		{
+			cout<<"enter name: ";
+			cin>>name;
+			cout<<"enter employee ID: ";
+			cin>>empId;
+			cout<<"enter gender: ";
+			cin>>gender;
+		}
+};
+class deptInfo
+{
+	public:
+		char deptname[20];
+		char assignwork[20];
+		int time2complete;
+		void getDeptinfo()
+		{
+			cout<<"enter department name: ";
+			cin>>deptname;
+			cout<<"enter assigned work: ";
+			cin>>assignwork;
+			cout<<"enter time in hours to complete work: ";
+			cin>>time2complete;
+		}
+};
+class employee : public basicInfo, public deptInfo
+{
+	public:
+		void getemployeeInfo()
+		{
+			cout<<"enter employee's basic info: "<<endl;
+			getbasicInfo();
+			cout<<"enter employee's department info: "<<endl;
+			getDeptinfo();
+		}
+		void printemployeeInfo()
+		{
+			cout<<"employee's Information is: "<<endl;
+			cout<<"basic Information....."<<endl;
+			cout<<"name: "<<name<<endl;
+			cout<<"employee ID: "<<empId<<endl;
+			cout<<"gender: "<<gender<<endl;
+			
+			cout<<"depatment Information....."<<endl;
+			cout<<"department name: "<<deptname<<endl;
+			cout<<"Assigned work: "<<assignwork<<endl;
+			cout<<"Time to complete work:"<<time2complete<<endl;
+		}
+};
+int main()
+{
+	employee emp;
+	emp.getemployeeInfo();
+	emp.printemployeeInfo();
+	return 0;
+}
